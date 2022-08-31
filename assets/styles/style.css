@@ -12,8 +12,10 @@ body {
 
 body{
     font-family: 'Poppins', sans-serif;
-    
+
     /* font view like better */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    
 }
