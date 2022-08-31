@@ -10,12 +10,36 @@ body {
     overflow-x: hidden;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 
     /* font view like better */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
-    
+
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
 }
