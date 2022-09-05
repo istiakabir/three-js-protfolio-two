@@ -10,7 +10,7 @@
     background: #16213E;
     display: grid;
     place-items: center;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .loading-box{
@@ -20,6 +20,13 @@
     border: 3px solid #9ED2C6;
     border-top: 3px solid #316766;
     border-bottom: 3px solid #316766;
+
+    @media (max-width: 600px) {
+        & {
+            width: 90vw;
+        }
+        
+    }
 }
 
 .loading-bar {
@@ -49,6 +56,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 355px) {
+        & {
+            font-size: 15px;
+        }
+        
+    }
 }
 
 .loading-text-boarder{
@@ -60,5 +74,35 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.loading-counter{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.loading-width-animation{
+    animation: width-animation 1s forwards;
+
+    @keyframes width-animation {
+        0% {
+            width: 85%;
+        }
+
+        100% {
+            width: 280px;
+        }
+        
+    }
+}
+
 
 
