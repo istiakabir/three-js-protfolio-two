@@ -1,0 +1,57 @@
+.cool-link {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+ 
+}
+
+.cool-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+}
+
+.cool-link::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform: translate3d(150%, 0, 0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.cool-link:hover::before{
+    transform: scale3d(1, 1, 1);
+    transform-origin: left;
+}
+
+.cool-link:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.cool-link:hover span{
+    transform: translate3d(-150%, 0, 0);
+}
+
+.cool-btn{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    width: 175px;
+    height: 120px;
+    background: none;
+
+}
+
+
+
+
+
