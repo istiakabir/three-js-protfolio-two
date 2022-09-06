@@ -1,4 +1,6 @@
-.landing{
+@import url('http://fonts.cdnfonts.com/css/voice-in-my-head');
+
+.landing {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -6,8 +8,8 @@
     /* background-image: url('../images/183.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
+
+
 }
 
 .header {
@@ -32,7 +34,7 @@
     gap: 2rem;
 }
 
-.socials{
+.socials {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -48,7 +50,7 @@
     /* animation: colorIconAnimation 0.2s infinite; */
 }
 
-.social-color-icon:hover{
+.social-color-icon:hover {
     animation: colorIconAnimation 0.2s infinite;
 }
 
@@ -57,23 +59,27 @@
     0% {
         text-shadow: 5px 4px red, -5px -6px blue;
     }
+
     25% {
         text-shadow: 5px -6px red, -5px 4px blue;
 
     }
+
     50% {
         text-shadow: 5px -4px red, -8px 4px blue;
 
     }
+
     75% {
         text-shadow: -8px -4px red, -5px -4px blue;
 
     }
+
     100% {
         text-shadow: 5px 0 red, 5px -4px blue;
 
     }
-    
+
 }
 
 .scroll-down {
@@ -83,14 +89,14 @@
     transform: translateX(-50%);
 }
 
-.scroll-down-wheel{
+.scroll-down-wheel {
     height: 42px;
     width: 24px;
     border-radius: 10px;
     border: 2px solid black;
 }
 
-.scroll-down-wheel-inner{
+.scroll-down-wheel-inner {
     position: absolute;
     left: 10px;
     margin-top: 5px;
@@ -106,46 +112,52 @@
     0% {
         top: 1px;
     }
+
     25% {
         top: 2px;
     }
+
     50% {
         top: 3px;
     }
+
     75% {
         top: 2px;
     }
+
     100% {
         top: 1px;
     }
-    
+
 }
 
-.scroll-down-arrows{
+.scroll-down-arrows {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 45px;
-    
+
 }
 
-.scroll-down-arrow{
+.scroll-down-arrow {
     width: 15px;
     height: 15px;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     transform: rotate(45deg);
     animation: scrollAnimation 1s infinite;
-    
+
 }
 
-.scroll-down-arrow:nth-child(1){
+.scroll-down-arrow:nth-child(1) {
     animation-delay: 0.1s;
 }
-.scroll-down-arrow:nth-child(2){
+
+.scroll-down-arrow:nth-child(2) {
     animation-delay: 0.2s;
 }
-.scroll-down-arrow:nth-child(3){
+
+.scroll-down-arrow:nth-child(3) {
     animation-delay: 0.3s;
 }
 
@@ -153,13 +165,41 @@
     0% {
         opacity: 0;
     }
-   
+
     50% {
         opacity: 0.5;
     }
-  
+
     100% {
         opacity: 1;
     }
-    
+
+}
+
+.imoji {
+    width: 20px;
+}
+
+.intro-text {
+    position: absolute;
+    top: 520%;
+    left: -22%;
+    width: 100%;
+    height: 60%;
+    z-index: 2;
+
+}
+
+h4 {
+    font-size: 28px;
+    font-family: 'Voice In My Head', sans-serif;
+                                                
+}
+
+h1 {
+    font-size: 30px;
+    width: 93%;
+    padding-top: 1rem;
+    font-family: 'Voice In My Head', sans-serif;
+                                                
 }
