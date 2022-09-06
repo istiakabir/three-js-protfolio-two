@@ -6350,7 +6350,8 @@ var barInterval = setInterval(function () {
 
     _gsap.default.to(".svg-logo", {
       duration: 10,
-      opacity: 1
+      opacity: 1,
+      rotate: "360deg"
     });
 
     _gsap.default.to(".loading-box", {
@@ -6361,9 +6362,15 @@ var barInterval = setInterval(function () {
     _gsap.default.to(".loading", {
       delay: 2,
       duration: 2,
-      // zIndex: 1,
+      zIndex: 1,
       background: "transparent",
       opacity: 0.5
+    });
+
+    _gsap.default.to(".svg-logo", {
+      duration: 100,
+      delay: 2,
+      rotate: "360deg"
     });
   }
 }, 20);
@@ -6395,7 +6402,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8721" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3669" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

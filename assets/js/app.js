@@ -32,6 +32,7 @@ gsap.to(".loading-box", {
 gsap.to(".svg-logo", {
     duration: 10,
     opacity: 1,
+    rotate:"360deg",
 
 });
 gsap.to(".loading-box", {
@@ -42,9 +43,16 @@ gsap.to(".loading-box", {
 gsap.to(".loading", {
     delay: 2,
     duration: 2,
-    // zIndex: 1,
+    zIndex: 1,
     background: "transparent",
     opacity: 0.5,
+});
+
+gsap.to(".svg-logo", {
+    duration: 100,
+    delay: 2,
+    rotate:"360deg",
+
 });
 
 }
